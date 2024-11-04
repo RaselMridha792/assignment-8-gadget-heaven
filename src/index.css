@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.border-transparent{
+    border: 16px solid rgba(255, 255, 255, 0.17);
+}
+.bg-image{
+    background-image: url('./assets/banner.jpg');
+}
