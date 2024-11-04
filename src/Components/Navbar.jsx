@@ -2,7 +2,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
-  console.log(location.pathname)
 
   const navbarColor =
     location.pathname === '/' ?'bg-opacity-0': 'text-black';

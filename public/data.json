@@ -1,0 +1,394 @@
+{
+  "products": [
+    {
+      "product_name": "Apple MacBook Pro 16",
+      "product_Id": "1",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-16-inch-m3-pro-black/macbook-pro-16-inch-m3-pro-black-01-500x500.webp",
+      "price": 2499,
+      "category": "Laptops",
+      "details": ["16-inch screen", "M3 Pro chip", "16GB RAM", "1TB SSD"]
+    },
+    {
+      "product_name": "Lenovo IdeaPad Flex 5",
+      "product_Id": "2",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-flex-5-14alc7/ideapad-flex-5-14alc7-08-500x500.webp",
+      "price": 599,
+      "category": "Laptops",
+      "details": ["14-inch screen", "Ryzen 5", "8GB RAM", "256GB SSD"]
+    },
+    {
+      "product_name": "Apple MacBook Air 15",
+      "product_Id": "3",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air-2024/macbook-air-13-inch-m3-starlight/macbook-air-13-inch-m3-starlight-01-500x500.webp",
+      "price": 1299,
+      "category": "Laptops",
+      "details": ["15-inch screen", "M3 chip", "8GB RAM", "512GB SSD"]
+    },
+    {
+      "product_name": "Apple MacBook Air 15 inch M3",
+      "product_Id": "4",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/macbook-air-midnight/macbook-air-13-inch-m3-midnight-01-500x500.webp",
+      "price": 1199,
+      "category": "Laptops",
+      "details": ["15-inch screen", "M3 chip", "8GB RAM", "256GB SSD"]
+    },
+    {
+      "product_name": "MacBook Air 13.3-Inch Retina Display",
+      "product_Id": "5",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/space-gray/13-inch/macbook-air-13-3-inch-500x500.webp",
+      "price": 999,
+      "category": "Laptops",
+      "details": [
+        "13.3-inch Retina display",
+        "Intel i5",
+        "8GB RAM",
+        "256GB SSD"
+      ]
+    },
+    {
+      "product_name": "Apple MacBook Air (2022)",
+      "product_Id": "6",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air-m2-chip/macbook-air-01-500x500.webp",
+      "price": 1399,
+      "category": "Laptops",
+      "details": ["13-inch screen", "M2 chip", "8GB RAM", "512GB SSD"]
+    },
+    {
+      "product_name": "Lenovo IdeaPad Slim 3 Ryzen 5 7520U",
+      "product_Id": "7",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3-15amn8/ideapad-slim-3-15amn8-08-500x500.webp",
+      "price": 549,
+      "category": "Laptops",
+      "details": ["15.6-inch screen", "Ryzen 5 7520U", "8GB RAM", "512GB SSD"]
+    },
+    {
+      "product_name": "Lenovo IdeaPad Slim 3 15AMN8",
+      "product_Id": "8",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3-15amn8/ideapad-slim-3-15amn8-0001-500x500.webp",
+      "price": 529,
+      "category": "Laptops",
+      "details": [
+        "15.6-inch screen",
+        "AMD Ryzen processor",
+        "8GB RAM",
+        "256GB SSD"
+      ]
+    },
+    {
+      "product_name": "iQOO Z9 Turbo",
+      "product_Id": "9",
+      "image": "https://www.91-img.com/pictures/161342-v2-iqoo-z9-turbo-mobile-phone-large-4.jpg",
+      "price": 399,
+      "category": "Phones",
+      "details": ["5G", "Snapdragon processor", "128GB Storage", "48MP Camera"]
+    },
+    {
+      "product_name": "iQOO Neo 9 Pro",
+      "product_Id": "10",
+      "image": "https://www.91-img.com/pictures/156670-v4-iqoo-neo-9-pro-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 549,
+      "category": "Phones",
+      "details": ["5G", "Snapdragon 8 series", "256GB Storage", "50MP Camera"]
+    },
+    {
+      "product_name": "Xiaomi Redmi Note 14 Pro Plus",
+      "product_Id": "11",
+      "image": "https://www.91-img.com/pictures/154781-v2-xiaomi-redmi-note-14-pro-plus-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 449,
+      "category": "Phones",
+      "details": ["5G", "MediaTek Dimensity", "128GB Storage", "108MP Camera"]
+    },
+    {
+      "product_name": "Xiaomi Redmi Note 13 Pro Plus 5G",
+      "product_Id": "12",
+      "image": "https://www.91-img.com/pictures/150270-v6-xiaomi-redmi-note-13-pro-plus-5g-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 399,
+      "category": "Phones",
+      "details": [
+        "5G",
+        "MediaTek Dimensity 1080",
+        "128GB Storage",
+        "64MP Camera"
+      ]
+    },
+    {
+      "product_name": "Motorola Edge 50 Pro 5G",
+      "product_Id": "13",
+      "image": "https://www.91-img.com/pictures/150376-v7-motorola-edge-50-pro-5g-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 799,
+      "category": "Phones",
+      "details": ["5G", "Snapdragon 8 Gen 2", "256GB Storage", "50MP Camera"]
+    },
+    {
+      "product_name": "Sony Xperia 1 VI",
+      "product_Id": "14",
+      "image": "https://www.91-img.com/pictures/162246-v1-sony-xperia-1-vi-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 1199,
+      "category": "Phones",
+      "details": ["5G", "Triple Camera", "128GB Storage", "4K Display"]
+    },
+    {
+      "product_name": "realme GT 5 Pro",
+      "product_Id": "15",
+      "image": "https://www.91-img.com/pictures/158292-v2-realme-gt-5-pro-mobile-phone-large-1.jpg?tr=q-80",
+      "price": 599,
+      "category": "Phones",
+      "details": ["5G", "Snapdragon 8 series", "256GB Storage", "50MP Camera"]
+    },
+    {
+      "product_name": "MEKO W1 Smart Sports Watch",
+      "product_Id": "16",
+      "image": "https://assets.gadgetandgear.com/upload/media/1723096732277485.jpeg",
+      "price": 89,
+      "category": "Smart Watches",
+      "details": [
+        "Heart Rate Monitor",
+        "GPS",
+        "Water Resistant",
+        "10 Days Battery"
+      ]
+    },
+    {
+      "product_name": "Haylou RS5 Amoled Smart Watch",
+      "product_Id": "17",
+      "image": "https://assets.gadgetandgear.com/upload/media/1712376701508565.jpeg",
+      "price": 79,
+      "category": "Smart Watches",
+      "details": [
+        "AMOLED Display",
+        "Heart Rate Monitor",
+        "Fitness Tracker",
+        "10 Days Battery"
+      ]
+    },
+    {
+      "product_name": "HUAWEI WATCH GT 4",
+      "product_Id": "18",
+      "image": "https://assets.gadgetandgear.com/upload/media/1708765163821354.jpeg",
+      "price": 199,
+      "category": "Smart Watches",
+      "details": ["AMOLED Display", "GPS", "Water Resistant", "14 Days Battery"]
+    },
+    {
+      "product_name": "Oraimo Watch 2R TFT",
+      "product_Id": "19",
+      "image": "https://assets.gadgetandgear.com/upload/media/1725256457524365.jpeg",
+      "price": 49,
+      "category": "Smart Watches",
+      "details": [
+        "TFT Display",
+        "Fitness Tracker",
+        "Water Resistant",
+        "7 Days Battery"
+      ]
+    },
+    {
+        "product_name": "Amazfit GTS 2 (2023 Edition)",
+        "product_Id": "20",
+        "image": "https://assets.gadgetandgear.com/upload/product/20220706_1657105405_233728.jpeg",
+        "price": 149,
+        "category": "Smart Watches",
+        "details": ["AMOLED display", "Fitness tracking", "GPS", "Long battery life"]
+    },
+    {
+        "product_name": "Haylou Solar Neo Smart Watch",
+        "product_Id": "21",
+        "image": "https://assets.gadgetandgear.com/upload/media/solar-neo-silver-1.jpeg",
+        "price": 35,
+        "category": "Smart Watches",
+        "details": ["Multiple sports modes", "Heart rate monitor", "Long battery life", "Water resistant"]
+    },
+    {
+        "product_name": "HUAWEI WATCH GT 4 Premium",
+        "product_Id": "22",
+        "image": "https://assets.gadgetandgear.com/upload/media/1708765163821354.jpeg",
+        "price": 199,
+        "category": "Smart Watches",
+        "details": ["GPS tracking", "Heart rate monitor", "Long battery life", "Stylish design"]
+    },
+    {
+        "product_name": "Oraimo 2R TFT Smart Watch",
+        "product_Id": "23",
+        "image": "https://assets.gadgetandgear.com/upload/media/1725256457524365.jpeg",
+        "price": 59,
+        "category": "Smart Watches",
+        "details": ["TFT display", "Fitness tracking", "Water resistant", "Notifications"]
+    },
+    {
+        "product_name": "Haylou RS5 AMOLED Fitness Watch",
+        "product_Id": "24",
+        "image": "https://assets.gadgetandgear.com/upload/media/1712376701508565.jpeg",
+        "price": 49,
+        "category": "Smart Watches",
+        "details": ["AMOLED display", "Fitness tracking", "Multiple sports modes", "Long battery life"]
+    },
+    {
+        "product_name": "Fastrack Active Smart Watch",
+        "product_Id": "25",
+        "image": "https://assets.gadgetandgear.com/upload/media/172363156050166.jpeg",
+        "price": 30,
+        "category": "Smart Watches",
+        "details": ["Fitness tracking", "Notifications", "Water resistant", "Stylish design"]
+    },
+    {
+        "product_name": "HONOR Haylou Choice Watch",
+        "product_Id": "26",
+        "image": "https://assets.gadgetandgear.com/upload/media/1719224360252986.jpeg",
+        "price": 45,
+        "category": "Smart Watches",
+        "details": ["Fitness tracking", "Sleep monitor", "Long battery life", "Lightweight design"]
+    },
+    {
+        "product_name": "MEKO W1 Sports Smart Watch",
+        "product_Id": "27",
+        "image": "https://assets.gadgetandgear.com/upload/media/1723096732277485.jpeg",
+        "price": 35,
+        "category": "Smart Watches",
+        "details": ["Sports mode", "Heart rate monitor", "Water resistant", "Long battery life"]
+    },
+    {
+        "product_name": "Haylou Solar 5 (Metallic Edition)",
+        "product_Id": "28",
+        "image": "https://assets.gadgetandgear.com/upload/media/solar-5-black-metallic-strap-1.jpeg",
+        "price": 39,
+        "category": "Smart Watches",
+        "details": ["Solar charging", "Multiple sports modes", "Heart rate monitor", "Stylish design"]
+    },
+    {
+        "product_name": "Baseus 65W GaN Charger",
+        "product_Id": "29",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 39,
+        "category": "Chargers",
+        "details": ["65W power", "GaN technology", "Compact design", "USB-C and USB-A ports"]
+    },
+    {
+        "product_name": "Anker 30W USB-C Charger",
+        "product_Id": "30",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 29,
+        "category": "Chargers",
+        "details": ["30W power", "Fast charging", "USB-C PD", "Compact size"]
+    },
+    {
+        "product_name": "Samsung 25W USB-C Charger",
+        "product_Id": "31",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 19,
+        "category": "Chargers",
+        "details": ["25W power", "Fast charging", "USB-C port", "Compatible with Galaxy devices"]
+    },
+    {
+        "product_name": "Xiaomi 33W Fast Charger",
+        "product_Id": "32",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 25,
+        "category": "Chargers",
+        "details": ["33W power", "Fast charging", "USB-C and USB-A ports", "Compact design"]
+    },
+    {
+        "product_name": "UGREEN 100W USB-C Charger",
+        "product_Id": "33",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 49,
+        "category": "Chargers",
+        "details": ["100W power", "Multiple ports", "Fast charging", "Compatible with various devices"]
+    },
+    {
+        "product_name": "RavPower 65W USB-C Charger",
+        "product_Id": "34",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 35,
+        "category": "Chargers",
+        "details": ["65W power", "Fast charging", "USB-C PD", "Compact and portable"]
+    },
+    {
+        "product_name": "Spigen 20W Charger",
+        "product_Id": "35",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 15,
+        "category": "Chargers",
+        "details": ["20W power", "Fast charging", "USB-C port", "Compact design"]
+    },
+    {
+        "product_name": "Apple 20W USB-C Charger",
+        "product_Id": "36",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 19,
+        "category": "Chargers",
+        "details": ["20W power", "Fast charging", "USB-C port", "Compatible with iPhone"]
+    },
+    {
+        "product_name": "Belkin 18W USB-C Charger",
+        "product_Id": "37",
+        "image": "https://www.startech.com.bd/image/cache/catalog/adapter/hoco/c106a/hoco-c106a-01-500x500.webp",
+        "price": 20,
+        "category": "Chargers",
+        "details": ["18W power", "Fast charging", "USB-C port", "Compact design"]
+    },
+    {
+        "product_name": "Awei P10K Power Bank (10000mAh, 22.5W)",
+        "product_Id": "38",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/awei/p10k/p10k-black-500x500.webp",
+        "price": 25,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "22.5W fast charging", "Dual output ports", "Compact design"]
+    },
+    {
+        "product_name": "Awei P20K Power Bank (10000mAh)",
+        "product_Id": "39",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/awei/p20k/p20k-01-500x500.webp",
+        "price": 22,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "Lightweight design", "Dual output ports", "Safe charging technology"]
+    },
+    {
+        "product_name": "Joyroom JR-PBF12 Power Bank (10000mAh, 12W)",
+        "product_Id": "40",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/joyroom/jr-pbf12/jr-pbf12-01-500x500.webp",
+        "price": 18,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "12W output", "LED power indicator", "Portable design"]
+    },
+    {
+        "product_name": "Awei P32K Portable Power Bank (10000mAh)",
+        "product_Id": "41",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/awei/p32k/p32k-01-500x500.webp",
+        "price": 30,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "Multiple charging ports", "Fast charging", "Durable casing"]
+    },
+    {
+        "product_name": "Hoco J105 Power Bank (10000mAh, 22.5W)",
+        "product_Id": "42",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/hoco/j105/j105-blue-01-500x500.webp",
+        "price": 28,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "22.5W fast charging", "LED power indicator", "Compact design"]
+    },
+    {
+        "product_name": "Awei P6K Power Bank (20000mAh Double)",
+        "product_Id": "43",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/awei/p6k/p32k-01-500x500.webp",
+        "price": 35,
+        "category": "Power Banks",
+        "details": ["20000mAh capacity", "Multiple output ports", "Fast charging technology", "Robust design"]
+    },
+    {
+        "product_name": "AWEI P67K Power Bank (10000mAh)",
+        "product_Id": "44",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/awei/p67k/p67k-1-500x500.jpg",
+        "price": 26,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "Multiple charging options", "Stylish design", "Lightweight"]
+    },
+    {
+        "product_name": "Hoco J89 Power Bank (10000mAh, 20W)",
+        "product_Id": "45",
+        "image": "https://www.startech.com.bd/image/cache/catalog/power-bank/Hoco/j89/j89-01-500x500.webp",
+        "price": 24,
+        "category": "Power Banks",
+        "details": ["10000mAh capacity", "20W output", "Compact size", "LED display"]
+    }
+  ]
+}
