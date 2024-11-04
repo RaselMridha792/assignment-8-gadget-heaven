@@ -4,6 +4,12 @@ import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/HomePage";
 import ErrorPage from "../pages/ErrorPage";
 import Dashboard from "../pages/Dashboard";
+import ProductDetails from "../Components/component/ProductDetails";
+
+const handleAddProduct = (product)=>{
+  console.log(product)
+
+}
 
 const routes = createBrowserRouter([
     {
@@ -18,6 +24,11 @@ const routes = createBrowserRouter([
         {
           path: '/dashboard',
           element: <Dashboard></Dashboard>
+        },
+        {
+          path: '/product-details/:product_Id',
+          element: <ProductDetails handleAddProduct={handleAddProduct}> </ProductDetails>,
+          loader: ()=> fetch('./data.json')
         }
         
       ]

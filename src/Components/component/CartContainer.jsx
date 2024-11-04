@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import { useParams } from "react-router-dom";
 
 const CartContainer = () => {
     const [products, setProducts] = useState();
-    const {id} = useParams()
 
     useEffect(()=>{
         const loadData =async ()=>{
@@ -14,7 +12,6 @@ const CartContainer = () => {
         }
         loadData()
     },[]);
-    console.log(products);
     return (
         <>
         {
