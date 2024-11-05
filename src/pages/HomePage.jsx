@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import "../index.css";
 import bannerImage from "../assets/banner.jpg";
 import CartContainer from "../Components/component/CartContainer";
+import Categories from "../component/Categories";
 
 const HomePage = () => {
+  const categories = useLoaderData();
   return (
     <>
       <div className="bg-gray-100">
@@ -46,31 +48,18 @@ const HomePage = () => {
               <div className="w-1/4">
                 <div className="border bg-white rounded-xl shadow-lg">
                   <ul className="flex flex-col gap-5 w-2/3 mx-auto py-5">
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
-                    <li className="btn btn-primary rounded-3xl">
-                      <button>All Product</button>
-                    </li>
+
+                  {/* dynamic nested component  */}
+                  <Categories categories={categories}></Categories>
+                  {/* dynamic nested component  */}
                   </ul>
                 </div>
               </div>
 
               {/* right side card  */}
               <div className="w-3/4 grid grid-cols-3 gap-5">
-              <CartContainer></CartContainer>
+                <CartContainer></CartContainer>
+                  <Outlet></Outlet>
               </div>
             </div>
           </div>

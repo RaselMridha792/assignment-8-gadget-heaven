@@ -1,22 +1,36 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { useParams } from "react-router-dom";
 
 const CartContainer = () => {
-    const [products, setProducts] = useState();
+    const { category } = useParams();
+    const [products, setProducts] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
 
-    useEffect(()=>{
-        const loadData =async ()=>{
-            const response = await fetch('./data.json');
+    useEffect(() => {
+        const loadData = async () => {
+            const response = await fetch('../data.json');
             const data = await response.json();
-            setProducts(data.products)
+            setProducts(data.products);
+            setFilteredProducts(data.products); 
+        };
+        loadData();
+    }, []);
+
+    useEffect(() => {
+        if (category) {
+            const filtered = products.filter(product => product.category === category);
+            setFilteredProducts(filtered);
+        } else {
+            setFilteredProducts(products);
         }
-        loadData()
-    },[]);
+    }, [category, products]);
+
     return (
         <>
-        {
-            products?products.map(product => <Card key={product.product_Id} product={product}></Card>):'not loading'
-        }
+            {filteredProducts && filteredProducts.map(product => (
+                <Card key={product.product_Id} product={product} />
+            ))}
         </>
     );
 };

@@ -1,7 +1,7 @@
 import { IoCartOutline } from "react-icons/io5";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 
-const ProductDetails = ({handleAddProduct}) => {
+const ProductDetails = () => {
   const { products } = useLoaderData();
   const { product_Id } = useParams();
   const id = parseInt(product_Id);
@@ -75,7 +75,7 @@ const ProductDetails = ({handleAddProduct}) => {
             <p className="text-2xl">{rating}</p>
           </div>
           <div className="flex gap-2 items-center py-5">
-            <button onClick={()=>handleAddProduct(product)} className="btn bg-purple-600 text-white rounded-3xl">
+            <button className="btn bg-purple-600 text-white rounded-3xl">
               Add to Card <IoCartOutline className="text-2xl" />
             </button>
             <div className="bg-gray-200 p-2 rounded-full">
