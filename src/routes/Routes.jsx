@@ -7,6 +7,7 @@ import Dashboard from "../pages/Dashboard";
 import ProductDetails from "../Components/component/ProductDetails";
 import { createContext } from "react";
 import CategoryCards from "../component/CategoryCards";
+import Statistic from "../pages/Statistic";
 
 
 export const CartContext = createContext([]);
@@ -37,6 +38,10 @@ const routes = createBrowserRouter([
           path: '/product-details/:product_Id',
           element: <ProductDetails> </ProductDetails>,
           loader: ()=> fetch('../data.json')
+        },
+        {
+          path: '/static',
+          element: <Statistic></Statistic>
         }
         
       ]

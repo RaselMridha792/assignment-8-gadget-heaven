@@ -1,4 +1,4 @@
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import "../index.css";
 import bannerImage from "../assets/banner.jpg";
 import CartContainer from "../Components/component/CartContainer";
@@ -8,7 +8,7 @@ const HomePage = () => {
   const categories = useLoaderData();
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 px-5">
         <div className="w-full min-h-[664px] bg-purple-500 max-w-screen-2xl mx-auto rounded-xl -mt-20 border border-purple-500">
           <div className="border-white min-h-[664px] w-full border-8 rounded-xl">
             <div className="pt-48 flex flex-col items-center justify-center text-white">
@@ -20,11 +20,9 @@ const HomePage = () => {
                 next level. From smart devices to the coolest accessories, we
                 have it all!
               </p>
-              <Link>
                 <button className="btn bg-white text-purple-500 px-5 py-3 rounded-3xl">
                   Shop Now
                 </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -43,9 +41,9 @@ const HomePage = () => {
               Explore Cutting-Edge Gadgets
             </h1>
 
-            <div className="flex gap-10 mt-20">
+            <div className="flex lg:gap-10 gap-5 mt-20 flex-col md:flex-row">
               {/* left side card  */}
-              <div className="w-1/4">
+              <div className="md:w-1/4">
                 <div className="border bg-white rounded-xl shadow-lg">
                   <ul className="flex flex-col gap-5 w-2/3 mx-auto py-5">
 
@@ -57,7 +55,7 @@ const HomePage = () => {
               </div>
 
               {/* right side card  */}
-              <div className="w-3/4 grid grid-cols-3 gap-5">
+              <div className="md:w-3/4 grid lg:grid-cols-3 md:grid-cols-2 gap-5">
                 <CartContainer></CartContainer>
                   <Outlet></Outlet>
               </div>

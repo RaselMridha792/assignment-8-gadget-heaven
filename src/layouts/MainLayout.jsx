@@ -1,19 +1,34 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 const MainLayout = () => {
   const CartContext = createContext([]);
+  const location = useLocation();
+
+  useEffect(() => {
+    const pageTitles = {
+      '/': 'Gadget | Gadget Heaven',
+      '/category/:category': 'Gadget | category',
+      '/dashboard': 'Dashboard | Gadget Heaven',
+      '/product-details/': 'Details | Gadget Heaven',
+      '/static': 'Statistic | Gadget Heaven'
+    };
+    document.title = pageTitles[location.pathname] || 'Gadget | Gadget Heaven';
+  }, [location]);
+
   return (
     <>
-      <Navbar></Navbar>
+      <Toaster />
+      <Navbar />
       <div className="min-h-screen">
         <CartContext.Provider value={[]}>
-          <Outlet></Outlet>
+          <Outlet />
         </CartContext.Provider>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

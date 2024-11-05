@@ -1,10 +1,13 @@
 import { IoCartOutline } from "react-icons/io5";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { addProduct, getAllProduct } from "../../utillities";
+import { useEffect, useState } from "react";
 
 const ProductDetails = () => {
   const { products } = useLoaderData();
   const { product_Id } = useParams();
   const id = parseInt(product_Id);
+  const [isProduct, setIsProduct] = useState(false);
   const product = products.find((product) => product.product_Id == id);
   const {
     image,
@@ -15,6 +18,22 @@ const ProductDetails = () => {
     rating,
     description,
   } = product;
+
+  useEffect(() => {
+    const allProducts = getAllProduct();
+
+    const isExist = allProducts.find(
+      (item) => item.product_Id == product.product_Id
+    );
+    if (isExist) {
+      setIsProduct(true);
+    }
+  }, [products, id]);
+  // handle add product btn
+  const handleAddProduct = (product) => {
+    addProduct(product);
+    setIsProduct(true);
+  };
 
   return (
     <>
@@ -75,7 +94,11 @@ const ProductDetails = () => {
             <p className="text-2xl">{rating}</p>
           </div>
           <div className="flex gap-2 items-center py-5">
-            <button className="btn bg-purple-600 text-white rounded-3xl">
+            <button
+              disabled={isProduct}
+              onClick={() => handleAddProduct(product)}
+              className="btn bg-purple-600 text-white rounded-3xl"
+            >
               Add to Card <IoCartOutline className="text-2xl" />
             </button>
             <div className="bg-gray-200 p-2 rounded-full">

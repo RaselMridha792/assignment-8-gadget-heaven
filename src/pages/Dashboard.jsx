@@ -1,7 +1,42 @@
-import { NavLink } from "react-router-dom";
-import { GiSettingsKnobs } from "react-icons/gi";
+import { useEffect, useState } from "react";
+import { getAllProduct, handleRemoveAll, removeProduct } from "../utillities";
+import AddToCart from "../component/AddToCart";
+import AddToWishList from "../component/AddToWishList";
 
 const Dashboard = () => {
+
+  const [product, setProduct] = useState([]);
+  const [buttonItem, setButtonItem] = useState(true);
+
+  useEffect(()=>{
+    const products = getAllProduct();
+    setProduct(products)
+
+  },[]);
+
+  const productRemoved = (id) =>{
+    removeProduct(id);
+    const products = getAllProduct();
+    setProduct(products)
+  };
+
+  const handleTogleBtn = (state) =>{
+    setButtonItem(state)
+  };
+
+
+  // sort product by decending order 
+  const handleSortPrice = () =>{
+    const sortProducts = [...product].sort((a, b)=> b.price - a.price);
+    setProduct(sortProducts);
+
+  };
+
+  // handle clear all product by purchase
+  const handlePurchase = () =>{
+    handleRemoveAll()
+    setProduct([]);
+  }
   return (
     <>
       <div className="max-w-screen-xl mx-auto">
@@ -13,28 +48,28 @@ const Dashboard = () => {
             it all!
           </p>
           <div className="flex gap-5 justify-center items-center pt-10">
-            <NavLink className="btn btn-primary bg-white text-purple-500 px-10 rounded-3xl hover:bg-purple-500 hover:text-white">
+            <button onClick={()=>handleTogleBtn(true)} 
+            
+            className={`btn ${buttonItem?'bg-white text-purple-500':'btn-outline text-white'} px-10 rounded-3xl hover:bg-purple-500 hover:text-white font-bold text-xl`}>
               Cart
-            </NavLink>
-            <button className="btn btn-outline text-white hover:bg-white hover:text-purple-500 font-bold rounded-3xl">
+            </button>
+            <button onClick={()=>handleTogleBtn(false)} 
+            className={`btn ${buttonItem?'btn-outline text-white':'bg-white text-purple-500'} px-10 font-bold text-xl hover:bg-white hover:text-purple-500 font-bold rounded-3xl`}>
               WishList
             </button>
           </div>
         </div>
 
-        <div className="flex justify-between my-10">
-          <div>
-            <p className="text-2xl font-bold">Cart</p>
-          </div>
-          <div className="flex items-center gap-5">
-            <p className="text-2xl font-bold">Total cost: </p>
-            <button className="btn btn-outline btn-primary text-lg">
-              Sort By Price
-              <GiSettingsKnobs />
-            </button>
-            <button className="btn btn-primary text-lg">Purchase</button>
-          </div>
-        </div>
+        {/* add to cart components  */}
+        {
+          buttonItem?<AddToCart product={product} 
+          productRemoved={productRemoved} 
+          handleSortPrice={handleSortPrice}
+          handlePurchase={handlePurchase}
+          ></AddToCart>: <AddToWishList></AddToWishList>
+        }
+        
+
       </div>
     </>
   );
