@@ -8,6 +8,7 @@ import ProductDetails from "../Components/component/ProductDetails";
 import { createContext } from "react";
 import CategoryCards from "../component/CategoryCards";
 import Statistic from "../pages/Statistic";
+import BecomeSeller from "../pages/BecomeSeller";
 
 
 export const CartContext = createContext([]);
@@ -26,7 +27,8 @@ const routes = createBrowserRouter([
           children: [
             {path: '/category/:category',
               element: <CategoryCards></CategoryCards>
-            }
+            },
+           
           ],
           loader: ()=> fetch('../categories.json')
         },
@@ -42,6 +44,10 @@ const routes = createBrowserRouter([
         {
           path: '/static',
           element: <Statistic></Statistic>
+        },
+        {
+          path: '/becomeseller',
+          element: <BecomeSeller></BecomeSeller>
         }
         
       ]

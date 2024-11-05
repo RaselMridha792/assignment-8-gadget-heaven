@@ -21,7 +21,7 @@ const CartContainer = () => {
         if (category) {
             const filtered = products.filter(product => product.category === category);
             setFilteredProducts(filtered);
-        } else {
+        }else {
             setFilteredProducts(products);
         }
     }, [category, products]);

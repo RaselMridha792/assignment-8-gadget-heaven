@@ -23,7 +23,7 @@ const MainLayout = () => {
     <>
       <Toaster />
       <Navbar />
-      <div className="min-h-screen">
+      <div className="">
         <CartContext.Provider value={[]}>
           <Outlet />
         </CartContext.Provider>

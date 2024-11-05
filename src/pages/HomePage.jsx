@@ -6,6 +6,14 @@ import Categories from "../component/Categories";
 
 const HomePage = () => {
   const categories = useLoaderData();
+
+  const handleScroll = () =>{
+    const div = document.getElementById('scrollDiv');
+    div.scrollIntoView({
+      behavior:'smooth',
+      block: 'start'
+    })
+  }
   return (
     <>
       <div className="bg-gray-100 px-5">
@@ -20,7 +28,7 @@ const HomePage = () => {
                 next level. From smart devices to the coolest accessories, we
                 have it all!
               </p>
-                <button className="btn bg-white text-purple-500 px-5 py-3 rounded-3xl">
+                <button onClick={handleScroll} className="btn bg-white text-purple-500 px-5 py-3 rounded-3xl">
                   Shop Now
                 </button>
             </div>
@@ -36,7 +44,7 @@ const HomePage = () => {
               />
             </div>
           </div>
-          <div className="py-40">
+          <div id="scrollDiv" className="py-40">
             <h1 className="text-center text-4xl font-bold">
               Explore Cutting-Edge Gadgets
             </h1>

@@ -39,15 +39,15 @@ const Dashboard = () => {
   }
   return (
     <>
-      <div className="max-w-screen-xl mx-auto">
-        <div className="text-center bg-purple-500 py-20 text-white">
+      <div className="">
+        <div className="text-center bg-purple-600 py-20 text-white">
           <h1 className="text-5xl font-bold pb-3">Dashboard</h1>
           <p className="text-xl w-2/3 mx-auto">
             Explore the latest gadgets that will take your experience to the
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <div className="flex gap-5 justify-center items-center pt-10">
+          <div className="flex gap-5 justify-center items-center pt-10 max-w-screen-xl mx-auto">
             <button onClick={()=>handleTogleBtn(true)} 
             
             className={`btn ${buttonItem?'bg-white text-purple-500':'btn-outline text-white'} px-10 rounded-3xl hover:bg-purple-500 hover:text-white font-bold text-xl`}>
@@ -59,7 +59,8 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-
+        <div className="max-w-screen-xl mx-auto">
+          
         {/* add to cart components  */}
         {
           buttonItem?<AddToCart product={product} 
@@ -68,6 +69,7 @@ const Dashboard = () => {
           handlePurchase={handlePurchase}
           ></AddToCart>: <AddToWishList></AddToWishList>
         }
+        </div>
         
 
       </div>
