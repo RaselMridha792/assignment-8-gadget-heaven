@@ -2,15 +2,19 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { getAllProduct } from "../utillities";
 import { useEffect, useState } from "react";
 import { BsCart3 } from "react-icons/bs";
+import { getAllWishlist } from "../utillities/wish";
 
 const Navbar = () => {
   const location = useLocation();
   const [addedData, setAddedData] = useState([]);
+  const [addedWish, setWish] = useState([]);
 
 
   // set the cart number 
   useEffect(()=>{
     const added = getAllProduct();
+    const wish = getAllWishlist();
+    setWish(wish);
     setAddedData(added);
   },[location.pathname])
 
@@ -96,7 +100,7 @@ const Navbar = () => {
             >            
             <div className="indicator bg-gray-200 p-2 rounded-full">
             <Link to='/dashboard'><img className="w-5" src="https://img.icons8.com/?size=100&id=86721&format=png&color=000000" alt="" /></Link>
-            <span className="badge badge-sm indicator-item">{addedData.length}</span>
+            <span className="badge badge-sm indicator-item">{addedWish.length}</span>
             </div>
             </div>
           </div>

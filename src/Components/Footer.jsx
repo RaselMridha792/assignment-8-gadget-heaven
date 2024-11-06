@@ -19,21 +19,19 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-center">
-              <h1 className="font-bold">Services</h1>
+              <h1 className="font-bold">Company</h1>
               <ul>
-                <li>Product Support</li>
-                <li>Order Tracking</li>
-                <li>Shipping & Delivery</li>
-                <li>Returns</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Contact</li>
               </ul>
             </div>
             <div className="text-center">
-              <h1 className="font-bold">Services</h1>
+              <h1 className="font-bold">Legal</h1>
               <ul>
-                <li>Product Support</li>
-                <li>Order Tracking</li>
-                <li>Shipping & Delivery</li>
-                <li>Returns</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
               </ul>
             </div>
           </div>

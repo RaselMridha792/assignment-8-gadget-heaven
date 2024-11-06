@@ -1,7 +1,8 @@
 import { IoCartOutline } from "react-icons/io5";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import {useLoaderData, useParams } from "react-router-dom";
 import { addProduct, getAllProduct } from "../../utillities";
 import { useEffect, useState } from "react";
+import { AddWishlist } from "../../utillities/wish";
 
 const ProductDetails = () => {
   const { products } = useLoaderData();
@@ -101,14 +102,14 @@ const ProductDetails = () => {
             >
               Add to Card <IoCartOutline className="text-2xl" />
             </button>
-            <div className="bg-gray-200 p-2 rounded-full">
-              <Link to="/wishlist">
+            <div className="bg-gray-200 px-2 btn py-1 rounded-full">
+              <button onClick={()=>AddWishlist(product)}>
                 <img
-                  className="w-8"
+                  className="w-8 bg-gray-200"
                   src="https://img.icons8.com/?size=100&id=86721&format=png&color=000000"
                   alt=""
                 />
-              </Link>
+              </button>
             </div>
           </div>
         </div>

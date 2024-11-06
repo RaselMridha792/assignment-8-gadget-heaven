@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { getAllProduct, handleRemoveAll, removeProduct } from "../utillities";
 import AddToCart from "../component/AddToCart";
 import AddToWishList from "../component/AddToWishList";
+import { useLocation } from "react-router-dom";
 
 const Dashboard = () => {
+  const location = useLocation()
 
   const [product, setProduct] = useState([]);
   const [buttonItem, setButtonItem] = useState(true);
@@ -12,7 +14,7 @@ const Dashboard = () => {
     const products = getAllProduct();
     setProduct(products)
 
-  },[]);
+  },[location.pathname]);
 
   const productRemoved = (id) =>{
     removeProduct(id);

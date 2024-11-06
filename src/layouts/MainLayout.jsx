@@ -14,7 +14,9 @@ const MainLayout = () => {
       '/category/:category': 'Gadget | category',
       '/dashboard': 'Dashboard | Gadget Heaven',
       '/product-details/': 'Details | Gadget Heaven',
-      '/static': 'Statistic | Gadget Heaven'
+      '/static': 'Statistic | Gadget Heaven',
+      '/becomeseller': 'seller | Gadget Heaven',
+      'product-details/1': 'details | Gadget Heaven'
     };
     document.title = pageTitles[location.pathname] || 'Gadget | Gadget Heaven';
   }, [location]);
